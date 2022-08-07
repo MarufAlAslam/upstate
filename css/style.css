@@ -18,6 +18,16 @@
     src: url('../fonts/Butler_ExtraBold_Stencil.otf');
 }
 
+@font-face {
+    font-family: 'gothic';
+    src: url('../fonts/GOTHIC.TTF');
+}
+
+@font-face {
+    font-family: 'gothic-bold';
+    src: url('../fonts/GOTHICB.TTF');
+}
+
 * {
     font-family: 'butler-stencil';
 }
@@ -34,6 +44,14 @@
     font-family: 'butler-stencil-extrabold';
 }
 
+.century-gothic {
+    font-family: 'gothic';
+}
+
+.gothicb {
+    font-family: 'gothic-bold';
+}
+
 .hero {
     background-image: url('../img/banner.png');
     background-size: cover;
@@ -42,10 +60,102 @@
     min-height: 100vh;
 }
 
+.hero.contact {
+    background-image: url('../img/contact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
+
+.hero .img-fluid {
+    width: 250px;
+}
+
 a {
     text-decoration: none;
 }
 
 .fs-25 {
     font-size: 25px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.card.mt-3.h-100.border-dark.rounded-0.text-center {
+    height: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control,
+.form-select {
+    min-height: 50px;
+    font-family: 'gothic';
+    text-transform: uppercase;
+    resize: unset;
+}
+
+.form-control.rounded-0.w-75.insta {
+    background: url("../img/insta.png");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 25px;
+    padding-left: 60px;
+}
+
+.fs-70 {
+    font-size: 70px;
+}
+
+.form-control.rounded-0.disabled.w-25 {
+    background: white;
+    width: 100px !important;
+    max-width: 100px !important;
+    border-radius: unset !important;
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        background-image: url('../img/banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+    }
+
+    .hero .img-fluid {
+        width: 200px;
+    }
+
+    .fs-25 {
+        font-size: 16px;
+    }
+
+    .fs-40 {
+        font-size: 25px;
+    }
+
+    .fs-30 {
+        font-size: 20px;
+    }
+
+    .footer .img-fluid {
+        width: 190px;
+    }
+
+    .footer .century-gothic.mt-5 {
+        font-size: 10px;
+    }
 }
