@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'butler-stencil';
+    src: url('../fonts/Butler_Regular_Stencil.otf');
+}
+
+@font-face {
+    font-family: 'butler-stencil-medium';
+    src: url('../fonts/Butler_Medium_Stencil.otf');
+}
+
+@font-face {
+    font-family: 'butler-stencil-bold';
+    src: url('../fonts/Butler_Bold_Stencil.otf');
+}
+
+@font-face {
+    font-family: 'butler-stencil-extrabold';
+    src: url('../fonts/Butler_ExtraBold_Stencil.otf');
+}
+
+* {
+    font-family: 'butler-stencil';
+}
+
+.fw-medium {
+    font-family: 'butler-stencil-medium';
+}
+
+.fw-bold {
+    font-family: 'butler-stencil-bold';
+}
+
+.fw-extrabold {
+    font-family: 'butler-stencil-extrabold';
+}
+
+.hero {
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
